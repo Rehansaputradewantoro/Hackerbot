@@ -1,27 +1,27 @@
 {
-    "name": "LEGENDX BOT",
-    "description": "A bot CAN DO ANYTHING",
-    "logo": "",
+    "name": "Hacker BOT",
+    "description": "Bot BISA MELAKUKAN APA SAJA",
+    "logo": "https://telegra.ph//file/6a97f793407dde8e59d11.jpg",
     "keywords": [
         "TELETHON",
-        "X ARMY",
+        "X Hacker",
         "Telegram Bot",
         "piro bolte",
-        "LEGENDX22"
+        "HackerBot"
     ],
     "website": "",
-    "success_url": "https://telegram.dog/LEGENDX22",
+    "success_url": "https://telegram.dog/Revanstoreya",
     "env": {
         "BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
+            "description": "Kamu Pergilah Ke Pencarian Telegram Dan Ketik @BotFather",
             "value": ""
         },
         "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
+            "description": "Kamu Buka Website Link my.telegram.org",
             "value": ""
         },
         "APP_ID": {
-            "description": "Your API ID from my.telegram.org",
+            "description": "Kamu Buka Website Link my.telegram.org",
             "value": ""
         }
     },
