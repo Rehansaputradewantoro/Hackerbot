@@ -1,12 +1,14 @@
 {
     "name": "Hacker BOT",
     "description": "Bot BISA MELAKUKAN APA SAJA",
+    "repository": "https://github.com/Rehansaputradewantoro/Hackerbot"
     "logo": "https://telegra.ph//file/6a97f793407dde8e59d11.jpg",
     "keywords": [
+        "TELETHON",
         "X Hacker",
         "Telegram Bot",
-        "env": {",
         "HackerBot"
+        
     ],
     "website": "",
     "success_url": "https://telegram.dog/Revanstoreya",
